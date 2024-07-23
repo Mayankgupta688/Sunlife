@@ -1,0 +1,10 @@
+{
+  "name": "learnjs",
+  "version": "1.0.0",
+  "description": "Learn JavaScript",
+  "main": "randomNumber.js",
+  "author": "Mayank Gupta",
+  "dependencies": {
+    "randomize": "^0.0.4"
+  }
+}
