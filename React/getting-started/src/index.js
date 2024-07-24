@@ -1,13 +1,22 @@
 import ReactDOM from "react-dom";
 import React from "react";
-import HeaderComponent from "./component/Header";
-import FooterComponent from "./component/Footer";
-import MainComponent from "./component/Main";
+import UserComponent from "./component/PropsAreReadOnly";
 var renderElement = ReactDOM.createRoot(document.getElementById("root"));
+
+
+var employee = {
+    name: "TechnoFunnel",
+    age: 300
+}
+
+var data = [10, 20, 30]
+console.dir(employee)
+setTimeout(() => {
+    console.dir(employee)
+}, 10000)
+
 renderElement.render((
     <>
-        <HeaderComponent></HeaderComponent>
-        <MainComponent></MainComponent>
-        <FooterComponent></FooterComponent>
+        <UserComponent userName="Mayank" userAge="10" {...employee} employee={{...employee}} data={data} ></UserComponent>
     </>
 ));
