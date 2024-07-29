@@ -8,11 +8,11 @@ export default class EmpoyeeList extends Component {
     constructor() {
         super();
         var emp = [
-            { empName: "Mayank", empAge: 10 },
-            { empName: "Ankit", empAge: 10 },
-            { empName: "Anshul", empAge: 10 },
-            { empName: "Meha", empAge: 10 },
-            { empName: "Sagar", empAge: 10 }
+            { id: 1, empName: "Mayank", empAge: 10 },
+            { id: 2, empName: "Ankit", empAge: 10 },
+            { id: 3, empName: "Anshul", empAge: 10 },
+            { id: 4, empName: "Meha", empAge: 10 },
+            { id: 5, empName: "Sagar", empAge: 10 }
         ];
         
         this.state = {
