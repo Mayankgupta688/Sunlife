@@ -19,6 +19,7 @@ export default function EmployeeList() {
         console.log("Update Four")
     }, [count, employeeList])
     
+    
     useEffect(() => {
         debugger;
         Axios.get("http://localhost:3000/employees").then((response) => {
@@ -30,6 +31,9 @@ export default function EmployeeList() {
                 return oldValue + 1
             })
         }, 1000)
+    }, []);
+    
+    useEffect(() => {
     }, []);
     
     return (
