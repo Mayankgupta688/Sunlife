@@ -29,9 +29,6 @@ function useStockPrice(url) {
                 if (response.data.data.pricecurrent == stockPrice.price) {
                     setStockPrice({ ...stockPrice });
                 } 
-                
-                debugger
-                
                 setStockPrice({
                     price: response.data.data.pricecurrent,
                     color: response.data.data.pricecurrent > stockPrice.price ? "green" : "red"
